@@ -1,37 +1,37 @@
-# El Llamado Divino — Landing Page
+# The Divine Calling — Landing Page
 
-## Estructura
+## Structure
 ```
 landing/
-├── index.html        ← página principal
+├── index.html        ← main page
 └── assets/
-    ├── sky-bg.png    ← fondo del cielo
-    └── book-only.png ← mockup del libro
+    ├── sky-bg.png    ← sky background
+    └── book-only.png ← book mockup
 ```
 
-## Cómo abrir en VS Code
-1. Descomprime el zip.
-2. En VS Code: **File → Open Folder…** y elige la carpeta `landing/`.
-3. Recomendado: instala la extensión **Live Server** (Ritwick Dey) y haz click derecho sobre `index.html` → "Open with Live Server". Esto abre la página con recarga automática al guardar.
+## How to open in VS Code
+1. Unzip the file.
+2. In VS Code: **File → Open Folder…** and choose the `landing/` folder.
+3. Recommended: install the **Live Server** extension (Ritwick Dey), then right-click `index.html` → "Open with Live Server". This opens the page with automatic reload on save.
 
-## Insertar el video VTURB
-Abre `index.html` y busca el bloque marcado:
+## Insert the VTURB video
+Open `index.html` and look for the marked block:
 ```html
 <!-- ============================================================
-     VIDEO · Pega aquí tu embed (VTURB, YouTube no listado, Vimeo, etc.)
+     VIDEO · Paste your embed here (VTURB, unlisted YouTube, Vimeo, etc.)
 ============================================================ -->
 ```
-Reemplaza el `<div class="video-placeholder">…</div>` por tu snippet de VTURB:
+Replace `<div class="video-placeholder">…</div>` with your VTURB snippet:
 ```html
 <vturb-smartplayer id="vid-XXXXXXXXX"></vturb-smartplayer>
 <script src="https://scripts.converteai.net/.../player.js" async></script>
 ```
-El frame ya está dimensionado en 16:9 — el reproductor se expande al 100%.
+The frame is already sized at 16:9 — the player expands to 100%.
 
-## Publicar
-Sube **toda la carpeta `landing/`** (no solo el HTML) a tu hosting:
-- **Hostinger / cPanel:** sube al directorio `public_html` y descomprime.
-- **Netlify / Vercel / Cloudflare Pages:** arrastra la carpeta y obtienes URL gratis con HTTPS.
-- **GitHub Pages:** push del contenido de la carpeta a un repo y activa Pages.
+## Publish
+Upload **the entire `landing/` folder** (not only the HTML) to your hosting:
+- **Hostinger / cPanel:** upload it to the `public_html` directory and unzip it.
+- **Netlify / Vercel / Cloudflare Pages:** drag the folder and get a free HTTPS URL.
+- **GitHub Pages:** push the folder contents to a repo and enable Pages.
 
-Si tu plataforma solo acepta un archivo HTML, pide la versión "single-file" autocontenida.
+If your platform only accepts one HTML file, ask for the self-contained "single-file" version.
